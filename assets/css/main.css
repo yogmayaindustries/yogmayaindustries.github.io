@@ -7692,6 +7692,11 @@ blockquote span {
 .footer .footer-top .footer-logo a img {
   width: 200px;
 }
+.footer .footer-top .footer-logo a .logo-icon {
+  height: 50px;
+  width: auto;
+  margin-right: 4px;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer .footer-top .footer-logo a img {
