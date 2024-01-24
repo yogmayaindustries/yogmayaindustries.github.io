@@ -1,0 +1,122 @@
+.footer-section {
+  background-color: #081828;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .footer-top {
+    .footer-logo {
+      padding-bottom: 60px;
+      border-bottom: 1px solid #ffffff26;
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 300px;
+      }
+      .logo-icon {
+        height: 50px;
+        width: auto;
+        margin-right: 4px;
+      }
+      .logo-text {
+        width: 200px;
+      }
+    }
+  }
+  .footer-bottom {
+    padding-top: 60px;
+    .container {
+      display: flex;
+    }
+    .single-footer {
+      width: 50%;
+      h3 {
+        position: relative;
+        margin-bottom: 32px;
+        padding-bottom: 15px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 24px;
+        &::before {
+          display: block;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 40px;
+          height: 3px;
+          background-color: #0167F3;
+          content: '';
+        }
+      }
+      &.f-contact {
+        .phone {
+          color: #d6d6d6;
+        }
+        ul {
+          margin: 10px 0;
+          li {
+            display: block;
+            margin-bottom: 16px;
+            color: #d6d6d6;
+          }
+          span {
+            display: block;
+          }
+        }
+        span,a {
+          color: #d6d6d6;
+        }
+      }
+      &.f-link {
+        ul {
+          li {
+            display: block;
+            margin-bottom: 12px;
+            position: relative;
+            a {
+              color: #d6d6d6;
+              font-size: 14px;
+              font-weight: 500;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright-locale {
+    padding-top: 20px;
+    .copyright {color: #fff;}
+  }
+  @media (max-width:1024px) and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .footer-top {
+      .footer-logo {
+        padding-bottom: 30px;
+      }
+    }
+    .footer-bottom {padding-top: 30px;}
+  }
+  @media (max-width:767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .footer-top {
+      .footer-logo {
+        padding-bottom: 30px;
+        .logo-icon {height: 35px;}
+        .logo-text {max-width: 160px;}
+      }
+    }
+    .footer-bottom {
+      padding-top: 30px;
+      .container {flex-direction: column;}
+      .single-footer {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
